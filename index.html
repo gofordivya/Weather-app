@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-2">
+      <section class="header">
+        <h1 class="display-4 mb-4">Weather</h1>
+        <div class="d-flex">
+          <input type="text" placeholder="Enter the city..." id="cityinput" />
+          <input
+            type="submit"
+            class="btn btn-primary"
+            value="Submit"
+            id="add"
+          />
+        </div>
+      </section>
+
+      <section class="display mt-2">
+        <div class="alert bg-light-transparent" role="alert">
+          <h1 id="cityName" class="display-6"></h1>
+          <p id="weatherCondition"></p>
+          <p id="temperation"></p>
+          <p id="windSpeed"></p>
+        </div>
+        <div class="alert alert-danger" role="alert">
+          Please enter correct city name
+        </div>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
